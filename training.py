@@ -2,7 +2,7 @@ import os, sys
 parent_dir = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(parent_dir)
 
-from document_bert import BertForDocumentClassification
+from document_matching import CoLDE
 
 from tqdm import tqdm
 from pprint import pformat
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     args = initialize_arguments(p)
     torch.cuda.empty_cache()
 
-    model = BertForDocumentClassification(args=args)
+    model = CoLDE(args=args)
 
     # Model Training
     log.info("Supervised Model training...")

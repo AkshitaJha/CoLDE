@@ -23,7 +23,7 @@ import os, sys
 parent_dir = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(parent_dir)
 
-from document_bert_architectures import DocumentBertLSTM
+from model_architectures import DocumentBertLSTM
 from loss_supContrast import SupConLoss
 
 
@@ -122,11 +122,11 @@ def encode_documents(documents: list, tokenizer: BertTokenizer, max_input_length
         document_seq_lengths.append(max_seq_index+1)
     return output, torch.LongTensor(document_seq_lengths)
 
-document_bert_architectures = {
+model_architectures = {
     'DocumentBertLSTM': DocumentBertLSTM,
 }
 
-class BertForDocumentClassification():
+class CoLDE():
     def __init__(self, args=None,
                  labels=None,
                  device='cuda',
@@ -185,7 +185,7 @@ class BertForDocumentClassification():
         #                                                          self.args['model_directory'].split(os.path.sep)[-1]+'_'+self.args['architecture']+'_'+str(self.args['fold'])))
 
         # Load the BERT model from 'bert_model_path' - 'bert-base-unacsed' or saved model
-        self.bert_doc_classification = document_bert_architectures[self.args['architecture']].from_pretrained(self.args['bert_model_path'], config=config)
+        self.bert_doc_classification = model_architectures[self.args['architecture']].from_pretrained(self.args['bert_model_path'], config=config)
         self.bert_doc_classification.freeze_bert_encoder()
         self.bert_doc_classification.unfreeze_bert_encoder_last_layers()
 

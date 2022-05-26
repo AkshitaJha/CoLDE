@@ -22,7 +22,7 @@ CoLDE builds upon the publicly available code from [BERT for Document Classifica
 If you extend this work or use the code, please cite
 
 ```
-@inproceedings{jha2022supervised,
+@inproceedings{,
   title={Supervised Contrastive Learning for Interpretable Long-Form Document Matching},
   author={},
   booktitle={TKDD},
