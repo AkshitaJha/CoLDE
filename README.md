@@ -14,7 +14,7 @@ You can either provide command line arguments or modify the hyperparameters and 
 
 ##### Acknowledgement
 
-CoLDE builds upon the publicly available code from [BERT for Document Classification]{https://github.com/AndriyMulyar/bert_document_classification} and the [Contrastive Loss implementation]{https://github.com/tteepe/GaitGraph/blob/main/src/losses.py} by [GaitGraph]{https://github.com/tteepe/GaitGraph}. We thank the authors for releasing their implementation.
+CoLDE builds upon the publicly available code from [BERT for Document Classification](https://github.com/AndriyMulyar/bert_document_classification) and the [Contrastive Loss implementation](https://github.com/tteepe/GaitGraph/blob/main/src/losses.py) by [GaitGraph](https://github.com/tteepe/GaitGraph). We thank the authors for releasing their implementation.
 
 
 #### Citing
