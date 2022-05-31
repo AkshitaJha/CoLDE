@@ -17,16 +17,3 @@ You can either provide command line arguments or modify the hyperparameters and 
 CoLDE builds upon the publicly available code from [BERT for Document Classification](https://github.com/AndriyMulyar/bert_document_classification) and the following [Contrastive Loss](https://github.com/tteepe/GaitGraph/blob/main/src/losses.py) implementation. We thank the authors for releasing their implementation.
 
 
-### Citing
-
-If you extend this work or use the code, please cite
-
-```
-@inproceedings{,
-  title={Supervised Contrastive Learning for Interpretable Long-Form Document Matching},
-  author={},
-  booktitle={TKDD},
-  year={2022}
-}
-```
-
