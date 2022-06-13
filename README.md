@@ -17,3 +17,19 @@ You can either provide command line arguments or modify the hyperparameters and 
 CoLDE builds upon the publicly available code from [BERT for Document Classification](https://github.com/AndriyMulyar/bert_document_classification) and the following [Contrastive Loss](https://github.com/tteepe/GaitGraph/blob/main/src/losses.py) implementation. We thank the authors for releasing their implementation.
 
 
+### Citation
+```
+@article{10.1145/3542822,
+  author = {Jha, Akshita and Rakesh, Vineeth and Chandrashekar, Jaideep and Samavedhi, Adithya and Reddy, Chandan K.},
+  title = {Supervised Contrastive Learning for Interpretable Long-Form Document Matching},
+  year = {2022},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  issn = {1556-4681},
+  url = {https://doi.org/10.1145/3542822},
+  doi = {10.1145/3542822},
+  journal = {ACM Trans. Knowl. Discov. Data},
+  month = {may},
+  keywords = {long documents, contrastive learning, embeddings, semantic text matching, BERT, attention, interpretability, transformer}
+}
+```
